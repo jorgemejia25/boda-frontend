@@ -1,0 +1,59 @@
+@import "./../../scss/mixins.scss";
+
+nav {
+  @include flex($direction: row);
+  backdrop-filter: blur(8px);
+  background-color: #f7f0e554;
+  height: 100px;
+  position: fixed;
+  top: -100px;
+  transition: 0.5s all;
+  width: 100%;
+  z-index: 10;
+
+  .column {
+    width: 33.33333333333333333%;
+    @include flex($direction: row);
+  }
+
+  .column-1 {
+    justify-content: flex-end;
+  }
+
+  .column-2 {
+    font-family: "Parisienne", cursive;
+    font-size: 3rem;
+  }
+
+  .column-3 {
+    justify-content: flex-start;
+  }
+
+  button {
+    position: absolute;
+    left: 10px;
+    padding: 0 !important;
+    width: fit-content !important;
+  }
+}
+
+.navbar-scrolled {
+  top: 0;
+  transition: 0.5s all;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    height: 80px;
+
+    .column-1,
+    .column-3 {
+      display: none;
+    }
+
+    .column-2 {
+      width: 100%;
+      font-size: 2.3rem;
+    }
+  }
+}

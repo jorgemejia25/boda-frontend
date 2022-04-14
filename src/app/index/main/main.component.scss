@@ -1,0 +1,26 @@
+mat-sidenav {
+  background-color: #f7f0e5bb;
+  backdrop-filter: blur(8px);
+  position: fixed;
+}
+
+.buttton-sidenav {
+  background-color: #f7f0e554;
+  backdrop-filter: blur(8px);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.button-scrolled {
+  opacity: 1;
+  transition: 0.5s all;
+}
+
+// @media (min-width: 1000px) {
+//   .buttton-sidenav {
+//     display: none;
+//   }
+// }

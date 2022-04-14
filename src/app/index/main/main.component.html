@@ -1,0 +1,17 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side">
+    <app-sidebar></app-sidebar>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-navbar (toggleSidebar)="sidenav.toggle()"></app-navbar>
+    <app-header></app-header>
+    <app-countdown finishDateString="2022-04-30 18:18:18"></app-countdown>
+    <app-historia></app-historia>
+    <app-gallery></app-gallery>
+    <app-ubicaciones></app-ubicaciones>
+    <app-confirmar></app-confirmar>
+    <app-regalos></app-regalos>
+    <app-lugares-turisticos></app-lugares-turisticos>
+  </mat-sidenav-content>
+</mat-sidenav-container>

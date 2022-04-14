@@ -1,0 +1,92 @@
+@import "./../../scss/mixins.scss";
+
+.confirmar {
+  padding: 4rem 0 0 0;
+  text-align: center;
+  @include flex;
+
+  &__title {
+    font-size: 4rem;
+    font-family: "Parisienne", cursive;
+  }
+
+  &__subtitle {
+    font-family: "PT Serif", serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 3px double #8f7a5a;
+    padding-bottom: 0.5rem;
+  }
+
+  &__disponibles {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+    margin-top: 0.8rem;
+    width: 70%;
+    font-family: "Playfair Display", serif;
+  }
+
+  &__nota {
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+    width: 90%;
+    max-width: 400px;
+    font-family: "Playfair Display", serif;
+  }
+
+  &__adicionales-label {
+    font-size: 1.1rem;
+    width: 70%;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+  }
+
+  &__confirmados {
+    font-size: 1.2rem;
+    margin: 0;
+    width: 70%;
+    max-width: 200px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    border: 1px solid #8f7a5a !important;
+    border-radius: 2px;
+    height: 30px;
+  }
+
+  &__button {
+    padding: 1rem;
+    background-color: #e9f7e5;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+
+  &__ausencia {
+    background-color: #ffbcbc;
+  }
+
+  .input-container {
+    width: 100%;
+    margin-bottom: 1.3rem;
+
+    @include flex($direction: row);
+
+    .button {
+      height: 30px;
+      margin: 0;
+      background-color: #f7f0e5;
+      border: none;
+      width: 30px;
+    }
+
+    .minus {
+      margin-right: 5px;
+    }
+
+    .plus {
+      margin-left: 5px;
+    }
+  }
+}

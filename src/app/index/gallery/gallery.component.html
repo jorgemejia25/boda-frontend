@@ -1,0 +1,17 @@
+<section class="gallery__section" id="galeria">
+  <h3 class="gallery__section__title">Galería</h3>
+  <div class="gallery">
+    <figure
+      class="gallery__item gallery__item--{{ imgIndex + 1 }}"
+      *ngFor="let img of imgListString; let imgIndex = index"
+    >
+      <img
+        src="/assets/img/gallery/{{ imgIndex + 1 }}.jpg"
+        class="gallery__img"
+        alt="Image {{ imgIndex + 1 }}"
+        (click)="openModal(imgIndex)"
+      />
+    </figure>
+  </div>
+  <img class="section-divider" src="/assets/img/divider2.svg" />
+</section>

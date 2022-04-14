@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #f7f0e5;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  line-height: 110% !important;
+  color: #636363;
+}
+
+h3 {
+  font-size: 3rem !important;
+  font-family: "Parisienne", cursive !important;
+}
+
+.section-divider {
+  width: 70%;
+  max-width: 300px;
+  margin-top: 2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@import "~@angular/cdk/overlay-prebuilt.css";
+.ks-modal-gallery-backdrop {
+  background: #000 !important;
+  opacity: 0.85 !important;
+}
+.ks-modal-gallery-panel {
+  z-index: 90000 !important;
+}

@@ -1,0 +1,28 @@
+@import "./../../scss/mixins.scss";
+
+.regalos {
+  padding: 4rem 0 0 0;
+  text-align: center;
+  @include flex;
+
+  &__title {
+    font-size: 2.5rem;
+    font-family: "Parisienne", cursive;
+  }
+
+  &__texto {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    width: 70%;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+  }
+
+  &__button {
+    padding: 1rem;
+    background-color: #f7f0e5;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+}

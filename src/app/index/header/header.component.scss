@@ -1,0 +1,54 @@
+@import "./../../scss/mixins.scss";
+
+header {
+  @include flex;
+  background-color: #ffffff;
+  height: 100vh;
+  min-height: 700px;
+  text-align: center;
+  width: 100%;
+
+  .divider-svg {
+    margin-bottom: 1rem;
+    max-width: 500px;
+    width: 90%;
+  }
+
+  h1 {
+    font-family: "Parisienne", cursive;
+    font-size: 5rem;
+    color: #8f7a5a;
+    text-align: center;
+  }
+
+  .line-svg {
+    margin-top: 1rem;
+    max-width: 350px;
+    width: 70%;
+  }
+
+  .date {
+    font-family: "PT Serif", serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+  }
+
+  .frase {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 500;
+    max-width: 500px;
+    width: 90vw;
+    font-size: 1rem;
+  }
+
+  .horas,
+  .ubicacion {
+    font-family: "PT Serif", serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}

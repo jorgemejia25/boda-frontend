@@ -1,0 +1,51 @@
+<form
+  class="confirmar"
+  *ngIf="invitado.confirmados == '0'"
+  [formGroup]="confirmarGroup"
+  id="confirmar"
+>
+  <h3 class="confirmar__title">Confirmar Asistencia</h3>
+  <div class="confirmar__subtitle">{{ invitado.nombre }}</div>
+  <div class="confirmar__disponibles">
+    Esta invitación es para
+    {{ invitado.cantidad }} personas.
+  </div>
+  <div class="confirmar__nota mt-2">
+    Debido a la situación actual, tenemos límite de aforo, por lo que
+    necesitamos que <strong>confirmes tu asistencia</strong> antes del
+    08.04.2022.
+  </div>
+
+  <div class="confirmar__adicionales-label">Vestimenta de gala</div>
+  <div class="confirmar__nota mt-2">
+    Por seguridad de todos, es necesario presentar constancia de vacunación con
+    esquema completo y, por favor, respeta nuestra decisión de una boda sin
+    niños, gracias.
+  </div>
+  <div class="input-container">
+    <button class="button minus" (click)="restConfirmados()">-</button>
+    <input
+      type="number"
+      [max]="invitado.cantidad"
+      min="0"
+      class="confirmar__confirmados"
+      placeholder="Invitados confirmados"
+      formControlName="confirmados"
+    />
+    <button class="button plus" (click)="sumConfirmados()">+</button>
+  </div>
+  <div>
+    <button
+      class="confirmar__button confirmar__ausencia m-1"
+      mat-button
+      type="button"
+      (click)="sendDenegar()"
+    >
+      No asistiré
+    </button>
+    <button class="confirmar__button" mat-button (click)="sendEdit()">
+      Confirmar
+    </button>
+  </div>
+  <img class="section-divider" src="/assets/img/divider2.svg" />
+</form>
