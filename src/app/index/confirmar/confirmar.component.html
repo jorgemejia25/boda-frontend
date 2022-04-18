@@ -13,7 +13,17 @@
   <div class="confirmar__nota mt-2">
     Debido a la situación actual, tenemos límite de aforo, por lo que
     necesitamos que <strong>confirmes tu asistencia</strong> antes del
-    08.04.2022.
+
+    <span
+      *ngIf="
+        invitado.id == 30117 ||
+          invitado.id == 30124 ||
+          invitado.id == 30125 ||
+          invitado.id == 30136;
+        else elseBlock
+      "
+      >22.04.2022</span
+    >. <ng-template #elseBlock>08.04.2022</ng-template>.
   </div>
 
   <div class="confirmar__adicionales-label">Vestimenta de gala</div>
